@@ -1,0 +1,15 @@
+//Krishna Sai Chemudupati
+//results.txt for lab01
+
+
+Enter a file name: numbers01.txt
+The total number of numbers in the file are: 13
+The first two numbers are: 1234, 123234345
+The last two numbers are: 096, 79678.0230123
+Press any key to continue . . .
+
+Enter a file name: numbers02.txt
+The total number of numbers in the file are: 21
+The first two numbers are: 123121, 123123
+The last two numbers are: 233568, 923457578
+Press any key to continue . . .
