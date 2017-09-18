@@ -12,7 +12,7 @@ int main()
 {
 	string filename;
 	string numbers;
-	int counter =0;
+	int counter = 0;
 	int finalCount;
 	string n1, n2, n3, n4;
 	cout << "Enter a file name: ";
@@ -23,7 +23,7 @@ int main()
 
 		while (!myfile.eof())
 		{
-			if(myfile.fail())
+			if (myfile.fail())
 			{
 				myfile.ignore();
 				myfile.clear();
@@ -31,7 +31,7 @@ int main()
 			else
 			{
 				counter++;
-				cin >> numbers;
+				myfile >> numbers;
 				if (counter == 1)
 				{
 					n1 = numbers;
@@ -44,6 +44,8 @@ int main()
 		}
 		finalCount = counter;
 		counter = 0;
+		myfile.close();
+		myfile.open(filename);
 		while (!myfile.eof())
 		{
 			if (myfile.fail())
@@ -54,8 +56,8 @@ int main()
 			else
 			{
 				counter++;
-				cin >> numbers;
-				if (counter == (finalCount-1))
+				myfile >> numbers;
+				if (counter == (finalCount - 1))
 				{
 					n3 = numbers;
 				}
